@@ -257,9 +257,6 @@ jobs:
         run: python src/generate_summary.py
         if: always()
       
-      - name: Generate regional subscriptions
-        run: python scripts/generate_regional_subs.py
-      
       - name: Update README timestamps and stats
         run: |
           timestamp=$(date +%s)
