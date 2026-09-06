@@ -6,6 +6,9 @@ INPUT_FILE = Path("configs/proxy_configs.txt")
 OUTPUT_DIR = Path("configs/regional")
 
 REGIONS = {
+    "usa-canada": {
+        "US", "CA"
+    },
     "western-europe": {
         "DE", "FR", "NL", "BE", "LU", "CH", "AT",
         "GB", "IE", "ES", "PT", "IT"
