@@ -215,6 +215,9 @@ jobs:
       # To disable again: put the '#' back at the start of the next two lines.
       - name: Replace raw configs with tested configs for default subscription link
         run: cp configs/proxy_configs_tested.txt configs/proxy_configs.txt
+
+      - name: Generate regional subscriptions
+        run: python scripts/generate_regional_subs.py
       
       - name: Convert configs to sing-box format
         run: python src/config_to_singbox.py
@@ -254,6 +257,9 @@ jobs:
         run: python src/generate_summary.py
         if: always()
       
+      - name: Generate regional subscriptions
+        run: python scripts/generate_regional_subs.py
+      
       - name: Update README timestamps and stats
         run: |
           timestamp=$(date +%s)
@@ -287,11 +293,9 @@ jobs:
           git add configs/xray_fragment_loadbalanced_config.json
           git add configs/xray_secure_loadbalanced_config.json
           git add configs/channel_stats.json
-          git add assets/
           git add README.md
           git add README_FA.md
-          git add README_CN.md
-          git add README_RU.md
+          git add configs/regional/
           
           if git diff --cached --quiet; then
             echo "No changes to commit"
