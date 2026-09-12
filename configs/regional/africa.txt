@@ -1,2 +1,1 @@
-vless://cd842ef8-9577-47f3-83ca-627147ed291b@38.54.59.209:2087?encryption=none&path=/d1000b16fe76&security=none&type=ws#🇪🇬 1621 - EG - VLESS/WS - 2087
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphZHVCOUhHeFFIakEyU0JNUmprSFg2@102.37.156.224:443#🇿🇦 53 - ZA - SS/AEAD - 443
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphZHVCOUhHeFFIakEyU0JNUmprSFg2@102.37.156.224:443#🇿🇦 65 - ZA - SS/AEAD - 443
